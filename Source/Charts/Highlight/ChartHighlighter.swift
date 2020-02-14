@@ -170,7 +170,7 @@ open class ChartHighlighter : NSObject, IHighlighter
     
     internal func getDistance(x1: CGFloat, y1: CGFloat, x2: CGFloat, y2: CGFloat) -> CGFloat
     {
-        return hypot(x1 - x2, y1 - y2)
+        return hypot(x1 - x2, (y1 - y2) / 4)
     }
     
     internal var data: ChartData?
